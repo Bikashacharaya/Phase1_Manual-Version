@@ -1,0 +1,64 @@
+:root{
+  --brand:#2b6cb0;
+  --muted:#666;
+  --card:#fff;
+  --bg:#f7fafc;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter, system-ui, Arial, sans-serif;
+  background:var(--bg);
+  color:#222;
+}
+.container{
+  max-width:1000px;
+  margin:24px auto;
+  padding:16px;
+}
+
+.nav{
+  background:var(--brand);
+  color:white;
+  padding:10px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.nav a{ color:white; text-decoration:none; margin-right:12px; }
+
+.card{
+  background:var(--card);
+  padding:12px;
+  border-radius:6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  margin-bottom:12px;
+}
+
+.row{ display:flex; gap:12px; align-items:center; }
+.col{ flex:1; }
+
+.form-group{ margin-bottom:10px; }
+label{ display:block; font-size:13px; margin-bottom:6px; color:var(--muted); }
+input[type="text"], input[type="email"], input[type="password"], select{
+  width:100%;
+  padding:8px;
+  border:1px solid #ddd;
+  border-radius:4px;
+}
+button{
+  padding:8px 12px;
+  border-radius:6px;
+  border:0;
+  background:var(--brand);
+  color:white;
+  cursor:pointer;
+}
+.small{ font-size:13px; color:var(--muted) }
+.table{ width:100%; border-collapse:collapse; margin-top:8px; }
+.table th, .table td{ padding:8px; border-bottom:1px solid #eee; text-align:left; }
+.actions button{ margin-right:8px; }
+
+.topbar{ display:flex; gap:12px; align-items:center; margin-bottom:12px; }
+.search{ flex:1; }
